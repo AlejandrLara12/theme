@@ -1,0 +1,66 @@
+.horarios-container
+  margin: 70px 0 40px 0
+
+  .horarios-wrap
+    margin: 0 auto
+    background-color: #fff
+    display: flex
+    max-width: 1060px
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    padding: 0 20px
+
+    .day-container
+      //background-color: $section-gray
+      border-bottom: 3px solid $light-green
+      width: 200px
+      margin: 0 10px 30px
+      padding: 20px 20px 0
+      background-color: white
+      border: 1px solid #bbb
+      border-radius: 3px
+      box-shadow: 0px 2px 4px rgba(30,30,30,0.4)
+
+
+      .dia
+        background-color: $light-green
+        font-size: $font-size-title-small
+        color: #fff
+        padding: 25px 0px
+        font-weight: $font-weight-normal
+        font-size: $menu-letter
+        text-transform: uppercase
+        line-height: 1
+        letter-spacing: 1px
+        margin: 0 0 10px 0
+        text-shadow: $text-shadow-normal
+
+      .clase
+        color: $text-color-title
+        font-size: $font-size-title-big
+        margin: 30px 0 15px
+        line-height: 1
+        .and
+          line-height: 1
+          margin: -10px 0 
+          padding: 0
+          font-size: 18px
+
+      .hora
+        color: $text-color-ligth
+        font-size: $font-size-normal-small
+        margin: 10px 0 30px
+
+      .dia-clase-div
+        width: 30px
+        height: 1px
+        background-color: transparentize($text-color-ligth, 0.3)
+        margin: 0 auto
+        display: no
+
+      .clases-div
+        width: 70%
+        height: 1px
+        background-color: $light-yellow
+        margin: 0 auto

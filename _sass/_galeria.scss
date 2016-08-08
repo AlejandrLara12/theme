@@ -1,0 +1,38 @@
+
+.galeria-wrap {
+	background-color: white;
+	max-width: 900px;
+	margin: 40px auto;
+	text-align: center;
+	border-radius: 3px;
+
+	nav{
+		.sub-nav-gal{
+
+			ul{
+				list-style: none;
+				[class^="to-"]{
+					display: inline-block;
+
+					li > a {
+						color:#fff;
+						text-shadow: 0 2px 3px rgba(0,0,0,.4);
+						font-family:  'Oswald','Slabo 27px',sans-serif;
+						text-transform: uppercase;
+						font-size: 20px;
+						background-color: darkred;
+						padding: 5px 10px;
+						letter-spacing: 1px;
+					}
+				}	
+			}
+			
+
+		}
+	}
+	.current{
+						background-color: pink;
+						font-size: 3em;
+					}
+	
+}

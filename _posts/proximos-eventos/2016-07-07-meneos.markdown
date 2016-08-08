@@ -1,0 +1,19 @@
+---
+#Fecha YYYY-MM-DD
+date: 2016-07-07 18:10:00 -0500
+
+
+title-evento: Jueves - Meneos
+
+lugar: Bar Meneos
+
+precio: $40H - $20M
+
+#Cuidar el formato de la fecha
+fecha: 7 Julio, 2016
+
+
+# Do NOT touch
+layout: default
+categories: proximos-eventos
+---
