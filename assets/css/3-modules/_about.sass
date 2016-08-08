@@ -1,0 +1,107 @@
+h3
+  @extend %small-bold
+  color: $accent-light
+  text-align: center
+  padding: 100px 0 30px
+.face-lockup
+  max-width: 780px
+  +display(flex)
+  margin: 0 auto
+  align-items: center
+  justify-content: space-between
+
+  .face-img
+    +size(200px)
+    +order(3)
+    border-radius: 50%
+    max-width: 200px
+
+  [class^="icon-"]
+    +size(100px)
+    background: $bgcolor
+    border-radius: 50%
+    box-shadow: -1px 3px 10px rgba(0,0,0,0.3)
+
+    path
+      fill: $accent
+
+    &.icon-pencil
+      +order(1)
+    &.icon-mouse
+      +order(2)
+    &.icon-browser
+      +order(4)
+    &.icon-video
+      +order(5)
+
+@media screen and (max-width: 650px)
+  .face-lockup
+    display: block
+    text-align: center
+
+    div
+      display: inline-block
+
+    .face-img
+      display: block
+      max-width: 200px
+      margin: 0 auto
+
+    [class^="icon-"]
+      margin: 10px
+
+
+      svg
+        +size(100px)
+
+
+
+.blurb
+  max-width: 620px
+  padding: 0 10px
+  margin: 50px auto
+  font-size: 24px
+  text-align: center
+  font-weight: 300
+
+
+.skill-lockup
+  max-width: 540px
+  color: #999
+  margin: 100px auto
+  +clearfix
+
+  .skill-unit
+    width: 270px
+    float: left
+
+    .skill-icons
+      font-size: 0
+      margin: 0px 0 30px
+      // use the font-size: 0 in the parent to fix the bug of the span
+      span
+        display: inline-block
+        background-color: $accent
+        +size(14px)
+        margin-right: 8px
+        border-radius: 50%
+
+        &:after
+          content: ''
+          display: block
+          +size(10px)
+          background: #fff
+          border-radius: 50%
+          margin: 2px
+
+      @for $i from 1 through 10
+        &.skill-#{$i} span:nth-child(n+#{$i+1})
+          @extend %skill-color
+
+@media screen and (max-width: 610px)
+  .skill-lockup
+    width: 270px
+
+
+%skill-color
+  background: $bgcolor

@@ -1,0 +1,31 @@
+# Site settings:
+title: Artist Theme
+email: artist@gmail
+description: "Thinker // Desinger // Youtuber // Student"
+avatar: face.jpg
+#logo:
+
+# Menu item list
+menu:
+- {name: About Me, url: '#about'}
+- {name: Work, url: '#work'}
+- {name: Clietns, url: '#clients'}
+- {name: Contact, url: '#contact'}
+
+
+# Skill list
+skills:
+- {name: Communication, value: '9'}
+- {name: Organization, value: '7'}
+- {name: Learning, value: '10'}
+- {name: Teaching, value: '6'}
+- {name: Planning, value: '7'}
+- {name: Visual Desing, value: '5'}
+- {name: UX Desing, value: '8'}
+- {name: Programming, value: '6'}
+
+# Change the site default images and content
+logo: logo.svg
+bg-img: hero-bg.jpg
+avatar: face.jpg
+blurb: <p><strong>Travis specializes in making things for human people</strong>. Most of the things he maes are <a href="">digital interfaces</a>, but he also puts effort into crafting <a href="">next-level beats</a>and YouTube videos abour making codes happen.</p>

@@ -1,0 +1,17 @@
+#Site settings
+
+
+
+
+
+  # Build settings
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+  # had double : in style
+  # nested
